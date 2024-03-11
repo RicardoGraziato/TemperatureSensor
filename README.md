@@ -10,7 +10,7 @@ o programa captura a temperatura de 15 em 15 segundos durante 30 minutos (120 te
 
 Requer no mínimo 2 GPIOs (um para o botão e outro para um dos sensores).
 
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 This project consists of a Python program for Raspberry Pi integrated with an SQLite database.
 
 The program's purpose is to capture temperature values from the environment and water using sensors (DHT11 and DS18B20, respectively) and store them in an SQLite database. A new database is created each month, facilitating data organization. Additionally, the date and time information of the temperature capture by the sensor are also recorded.
