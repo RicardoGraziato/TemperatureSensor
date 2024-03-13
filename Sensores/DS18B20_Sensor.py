@@ -1,3 +1,4 @@
+## *********FALTA TESTAR**********
 import sqlite3
 from datetime import datetime
 import RPi.GPIO as GPIO
