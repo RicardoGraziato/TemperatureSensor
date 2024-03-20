@@ -1,4 +1,3 @@
-## *********FALTA TESTAR**********
 import sqlite3
 from datetime import datetime
 import RPi.GPIO as GPIO
@@ -41,7 +40,7 @@ while True:
     try:
         if GPIO.input(botao) == GPIO.HIGH:
             tempo_inicial = time.time()
-            while (time.time() - tempo_inicial) < 1800:
+            while (time.time() - tempo_inicial) < 1800: #Tempo de execução (1800 = 30min)
                 now = datetime.now()
                 current_time = now.strftime("%H:%M:%S")
                 current_date = now.strftime("%d-%m-%Y")
@@ -54,9 +53,9 @@ while True:
                 print('Temperatura: {0:0.1f}C'.format(temperatura))
                 print(" ")
                 print("Temperatura salva")
-                time.sleep(15)
-            print("Fim da execução.")
-            fim = "Fim da execução"
+                time.sleep(15) #Intervalo entre as leituras (em segundos).
+            fim = "Fim da execução."    
+            print(fim)
             inserirDados(fim, fim, 0)
     except Exception as e:
         logging.error('Ocorreu um erro: %s', str(e))

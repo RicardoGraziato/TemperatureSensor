@@ -55,8 +55,8 @@ while True:
                 print(" ")
                 print("temperatura salva")
                 time.sleep(15) #Tempo entre as consultas/leituras
-            print("fim da execução.")
-            fim = "Fim da execução"
+            fim = "Fim da execução."
+            print(fim)
             inserirDados(fim, fim, 0) #Registra um "separador" no banco de dados para facilitar compreensão
     except Exception as e:
         logging.error('Ocorreu um erro: %s', str(e))
