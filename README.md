@@ -1,5 +1,5 @@
 # TemperatureSensor
-## Este projeto consiste em um programa em Python para Raspberry Pi integrado com um banco de dados SQLite.
+## Este projeto consiste em um programa em Python para Raspberry Pi integrado com banco de dados SQLite que capta e registra temperaturas (ambiente e de líquidos) via sensores DHT11 e DS18B20.
 
 O programa tem função de captar valores de temperatura de ambiente e de água através de sensores (DHT11 e DS18B20 respectivamente)
 e armazenar em um banco de dados SQLite (1 banco por mês, sendo essa troca feita automaticamente). Também serão armazenadas as informações de data/hora
